@@ -33,6 +33,11 @@ keymap.set("n", "<leader><C-h>", "<C-w>s")
 -- 取消搜索高亮
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- 保存
+keymap.set("n", "<C-s>", ":w<CR>")
+keymap.set("v", "<C-s>", ":w<CR>")
+keymap.set("i", "<C-s>", "<Esc>:w<CR>")
+
 
 ---------------
 -- visual mode
@@ -56,3 +61,9 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- 切换buffer
 keymap.set("n", "<C-right>", ":bnext<CR>")
 keymap.set("n", "<C-left>", ":bprev<CR>")
+
+-- bufferline
+
+keymap.set("n", "<leader>w", ":bdelete<CR>")
+-- keymap.set("n", "<leader>w<right>", ":BufferLineCloseRight<CR>")
+-- keymap.set("n", "<leader>w<left>", ":BufferLineCloseLeft<CR>")
